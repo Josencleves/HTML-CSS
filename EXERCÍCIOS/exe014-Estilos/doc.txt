@@ -1,0 +1,48 @@
+ESTILOS INTERNOS
+
+https://www.youtube.com/watch?v=fzyab4P2pn8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=39
+
+ao inves de inserir o CSS em cada linha, nós iremos criar um <style> dentro do <head> e dentro dele iremos criar chamar os seletores.
+Ex:
+<head>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: blue;
+            background: rgba(1, 1, 255, 0.418);
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Cpítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, maxime inventore! Voluptate, totam! Dolorum ut iusto et, ipsa provident distinctio minima eaque nihil doloremque commodi, quaerat tempora facere nam modi.</p>
+
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium enim alias saepe, odio quod dicta. Odit veniam modi cumque, officiis sint aliquid, expedita nihil delectus fugit non recusandae corrupti minima.</p>
+    
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ab in molestiae ut recusandae minima ipsum sequi officiis error obcaecati totam inventore, corrupti aspernatur pariatur natus porro explicabo repellendus animi.</p>
+</body>
+
+
+Obs:
+1°- Vantagem:
+ A alteração se aplica a todas as tags de uma única vez.
+
+2°- Desvantagem:
+ O estilo fica muito grande, atrapalhando chegar no html.
+
+3°- Desvantagem:
+ Se for preciso utilizar em outras páginas, será preciso copiar e colar o estilo em cada uma.

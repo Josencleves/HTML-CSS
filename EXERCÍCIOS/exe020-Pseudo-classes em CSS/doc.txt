@@ -1,0 +1,91 @@
+Pseudo-classes em CSS:
+
+https://www.youtube.com/watch?v=WPtRX4n0UJs&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=21
+
+
+":" representa um estado do html.
+Ex:
+div{
+        display: inline-block;
+        background-color: lightgray;
+        border: 1px solid black;
+        text-align: center; 
+        height: 200px;
+        width: 200px;
+    }
+    div:hover{
+        background-color: yellow;
+    }
+a pseudoclasse ":hover", altera o estado que inicialmente era azul para amarelo quando passamos o mouse.
+
+Ex:
+<CSS>
+<style>
+ div > p{/*aplicando regra a parágrafo filho da div para ocultar o texto.*/
+            display: none;
+        }
+div:hover >p{/*Pseudoclaase utilizada no "p" filho da "div", para revelar o texto oculto ao mesmo tempo em que aplica regras de estilo*/
+            display: block ;
+            color: aliceblue;
+            background-color: red;
+            width: 300px;
+        }
+</style>
+
+<html>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse
+        <p>Texto escondido...</p>/*Texto que queremos ocultar*/
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+
+--------------------------------------------------------------
+
+
+
+PSEUDO ELEMENTOS:
+
+https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22
+
+"::" alteram o conteúdo dos elementos no html.
+
+Ex:
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {(Quando o elemento foi visitado)
+    color: darkred;
+    
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:active {(Enquato está segurando o klick)
+    color: yellow;
+}
+a::after{(Acrescenta a string após do elemento)
+    content: '[Link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(70, 68, 68);
+}
+
+
+Símbolos:
+
+#  = id
+.  = class
+:  = pseudo-class( hover, visited, active)
+:: = pseudo-element( after, before)
+>  = Children

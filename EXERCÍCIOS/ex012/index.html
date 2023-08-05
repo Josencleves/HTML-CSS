@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu servidor</p>
+    <!--<video src="./midia/Military03(1080P).webm" width="500" controls></video>-->
+    <video loop autoplay controls width="560" poster="./imagens/capa.jpg">
+        <source src="./midia/military(1080p).mp4" type="video/mp4">
+        <source src="./midia/Military02(1080P).mp4" type="video/mp4">
+        <source src="./midia/Military03(1080P).webm" type="video/webm">
+        <p>seu navegador não é compatível com o video</p>
+    </video>
+
+    <h1>Inserido vídeos do you tube</h1><!--O modo não consome o serviço e hospedagem-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

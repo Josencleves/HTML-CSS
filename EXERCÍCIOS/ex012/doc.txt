@@ -1,0 +1,52 @@
+FORMATOS DE VIDEOS
+
+https://www.youtube.com/watch?v=DjOSM72cYac&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=34
+
+sites recomendados para download sem direitos autorais: 
+https://www.pexels.com/
+
+Os padões mais utilizados na web  são: mp4-m4v-webm-ogv
+
+software hand breack para converter videos
+
+--------------------------------------------------------------
+
+
+
+HOSPEDAGEM DE VIDEOS
+
+https://www.youtube.com/watch?v=TCeyIwFGkYo&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=35
+
+Para inserir um video usaremos a tag <video>
+Ex-01:
+
+<video src="./midia/Military(720P)(1).mp4" loop controls width="560" poster="./imagens/capa.jpg"></video>
+
+Obs:A atribuição "poster" serve para inserir capa ao nosso vídeo
+
+
+Porém para utlizar mais de umformato para evitar incompatibilidade, usaremos a forma mais completa.
+Ex-02:
+
+<video loop controls width="560" poster="./imagens/capa.jpg">
+    <source src="./midia/military(1080p).mp4" type="video/mp4">
+    <source src="./midia/Military02(1080P).mp4" type="video/mp4">
+    <source src="./midia/Military03(1080P).webm" type="video/webm">
+    <p>seu navegador não é compatível com o video</p>
+</video>
+
+Utilizando desta forma o site vai tentar abrir cada formato e abrirá o que for compatível.
+
+--------------------------------------------------------------
+
+INCORPORAÇÃO DE VÍDEOS
+
+https://www.youtube.com/watch?v=3hng-hmSv2Y&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=36
+
+Incorporando videos do youtube:
+Esse modo não consome serviço de hospedagem.
+Passo a passo:
+1°- acessar o vídeo
+2°- compartilhar
+3°- opção incorporar.(essa opção irá criar um código html, basta copiar e colar)
+Obs: Se o video for de aula por exemplo, é preciso saber que qualquer pessoa vai poder acessar seu video e piratear seu conteúdo, para isso devemos optar uma outra plataforma como por exemplo o "vimeo".

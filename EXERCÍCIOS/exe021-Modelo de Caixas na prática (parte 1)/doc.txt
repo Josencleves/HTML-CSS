@@ -1,0 +1,282 @@
+Modelo de Caixas na prática (parte 1):
+
+https://www.youtube.com/watch?v=rXF1okX0v9E&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=24
+
+user agent(navegador)
+
+------------------------------------------------------------
+
+
+
+
+Modelo de Caixas na prática (parte 2):
+
+https://www.youtube.com/watch?v=-CPoDvZLQ6k&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=25
+
+
+Ex:
+
+<style>
+    h1{
+        background-color: aqua;
+        height: 300px;
+        width: 300px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkblue;
+        
+        /*Simplificando: 
+        border: 10px solid darkblue;
+        */
+        
+        padding-top: 10px;
+        padding-right: 12px;
+        padding-bottom: 14px;
+        padding-left: 19px;
+        
+        /*
+        Simplificar: 
+            padding: 10px 12px 14px 19px;
+        - todos os valores iguais: 
+            padding: 10px;
+        - Se top = bottom e as laterais forem iguais:
+            padding: 10px 15px;
+        */
+        
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        
+        /*
+        Simplificar: 
+            margin: 10px 10px 20px 15px;
+        - todos os valores iguais: 
+            margin: 10px;
+        - Se top = bottom e as laterais forem iguais:
+            padding: 10px 15px;
+        */
+        
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: blueviolet;
+        
+        /*Simplificar: 
+        outline: 5px dashed blueviolet;*/
+    }
+    a{
+        /*
+        Transformando inline-level em "box-level"
+        display: block;
+        */
+        border-width: 10px;
+        border-style:solid;
+        
+        /*tipos: dashed(listrado), doted(pontilhado), double(linha dupla), droove(tridimencional)*/
+        
+        border-color: red;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+</style>
+
+
+
+box-level:
+1°- Começa em uma linha nova e o proximo texto começa na próxima linha.
+
+2°- Nele podemos editar margin, paddin, border... além de Altura e Largura.
+
+3°- Podemos transfomar em "inline-level" com o seguinte código:
+display: inline;
+
+Obs: Como "inline-level" começa e termina na mesma linha, ele não aceita mais os ajustes de altura e largura.
+
+
+
+inline-level:
+1°- Começa na mesma linha e o proximo texto começa na mesma linha. 
+
+2°- Nele podemos editar margin, paddin, border...
+
+3°- Podemos transfomar em "box-level" com o seguinte código:
+display: block;
+
+Obs: Como "boxe-level" começa em uma nova linha e termina em outra, agora ele aceita os ajustes de altura e largura.
+
+margin: auto; (Faz alinhamento horizontal)
+
+--------------------------------------------------------------
+
+
+
+
+
+GROUPING TAGS
+
+https://www.youtube.com/watch?v=JPMm-jyKOaM&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=26
+
+Esqueleto:
+
+<header>
+        <nav>
+        
+        </nav>
+</header>
+<main>
+    <section>
+    
+    </section>
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+</main>
+<footer>
+
+</footer>
+
+
+
+
+>>>>>>>>>  PRÁTICO  >>>>>>>>>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(97, 97, 97);
+            padding: 3px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(170, 169, 169);
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 5px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, política e tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, itaque doloremque ex officia tempora aliquid esse delectus minus rem autem corrupti sed assumenda voluptas neque omnis culpa. Expedita, incidunt ipsa?</p>
+                <aside>
+                    <p>Artigo escrito por josé da silva</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em video</p>
+    </footer>
+</body>
+
+--------------------------------------------------------------
+
+
+
+
+
+SOMBRAS NAS CAIXAS
+
+https://www.youtube.com/watch?v=JACiDRNWjjQ&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=27
+
+Ex:
+<style>
+    h1{
+        box-shadow: 4px 5px 20px 2px rgba(0, 0, 0, 0.445);
+    }
+</style>
+
+1°- Deslocamento eixo "x"(horizontal)
+2°- Deslocamento eixo "y"(vertical)
+3°- Desfocar
+4°- Extensão
+5°- Cor da sombra (sombra deve ser exclusivamente tons de breto)
+
+--------------------------------------------------------------
+
+
+
+
+CAIXAS COM VÉRTICES ARREDONDADOS:
+
+https://www.youtube.com/watch?v=PGIrTzQqpqo&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=28
+
+Para inserir arredondamento das bordas, usamos o comando
+Ex:
+border-radius: 5px; 
+( não é possível inserir pixels negativos)
+
+E possível atribuir um valor para cada quina.
+Ex:
+border-radius: 0px 25px 10px 15px;
+
+Forma simplificada.
+Ex:
+border-radius: 0px 30px;
+(superior esquerda e inferior direita = 0px e superior direita e inferior esquerda = 30px).
+Insrerindo sombra, ela asumirá a mesma forma da caixa.
+
+Em um quadrado perfeito, border-radius: 50%; cria uma circunferência perfeita.
+
+--------------------------------------------------------------
+
+
+
+
+BORDAS DECORADAS:
+
+https://www.youtube.com/watch?v=n0rjAs_Im4w&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=29
+
+

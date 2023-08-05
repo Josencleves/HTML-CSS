@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia html5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferenres ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+
+    <picture><!--Source: media: type. Para mudar de foto depedendo do tamanho da tela-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="./imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudios em html5</p>
+    <!-- <audio src="./midia/White River - Aakash Gandhi.mp3" controls autoplay></audio> -->
+    <!--MP# WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        
+        <source src="./midia/White River - Aakash Gandhi.mp3" type="audio/mpeg" >
+        
+        <source src="./midia/White River - Aakash Gandhi.ogg" type="audio/ogg">
+        
+        <source src="./midia/White River - Aakash Gandhi.wav" type="audio/wav">
+        <p>Infelismente seu navegador não consegue reproduzir àudio. <a href="./midia/White River - Aakash Gandhi.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+    <audio preload="" src=""></audio>
+</body>
+</html>

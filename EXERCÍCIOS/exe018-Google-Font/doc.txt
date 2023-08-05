@@ -1,0 +1,84 @@
+Google Fonts
+https://www.youtube.com/watch?v=FLuQonci9wU&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=14
+
+
+1-Seleciona o tipo
+2-copiar o link: @import(CSS)
+3-copiar a chamada
+
+Obs: Todas as fontes devem está no início do style(CSS), ou na primeira linha da folha de CSS e fora do seletor.
+--------------------------------------------------------
+
+
+
+
+
+BAIXANDO FONTES EXTERNAS:
+
+https://www.youtube.com/watch?v=3YIXnxA1kqg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=15
+
+
+Site gratuito: https://www.dafont.com/pt/theme.php?cat=113
+
+Tipos de formatos:
+- opentype (otf)
+- truetype (ttf)
+- embedded-opentype
+- Truetype-aat(Apple Advanced Typografy)
+- svg
+
+Obs: Não é recomendável deixar os arquivos de fontes na pasta principal, normalmente criamos uma pasta chamada fontes e colocamos todos os arquivos lá dentro.
+
+Como inserir:
+
+1°) inserir a fonte:
+Ex:
+
+<style>
+    @font-face {
+        font-family: 'xxx(qualquer nome)';
+        src: url('O endereço da fonte');
+    }
+Obs: Também é possível inserir mais de um formato ao mesmo tempo. Para isso basta inserir ", " antes de ";" e um novo "url()"
+
+2°) Chamar a fonte:
+Ex:
+
+    h1 {
+        font-family: 'xxx', 'Times New Roman, Times, serif;
+    }
+</style>
+
+Obs: Times New Roman foi inserido, pois caso o navegador não reconheça a fonte: 'xxx' o site não irá quebrar.
+
+------------------------------------------------------------
+
+
+
+
+
+
+CAPRUTANDO AS FONTES USADAS EM UM SITE:
+
+https://www.youtube.com/watch?v=XTtfM0L7Co0&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=16
+
+
+Baixar a extenção fontes ninja, a extenção consegue ler todas as fontes de uma página web e captur informações como: tamanho, peso, cor...
+
+--------------------------------------------------------------
+
+
+
+
+
+
+DETECTANDO FONTES DE DENTRO DE IMAGENS:
+
+https://www.youtube.com/watch?v=i_c5Fzk807M&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=17
+
+
+Sites Ferramenta:
+
+1°- https://www.whatfontis.com/
+2°- https://www.fontsquirrel.com/
+3°- https://www.myfonts.com/

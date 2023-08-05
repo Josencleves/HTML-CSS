@@ -1,0 +1,161 @@
+Listas mistas e de definição
+
+listas:
+
+LISTA NÃO ORDENADA.
+
+ul = unordered list.
+Ex:
+<html>
+<ul>
+    <li>café</li>
+    <li>Almoço</li>
+    <li>Jnata</li>
+</ul>
+
+<web>
+. café
+. Almoço
+. Janta
+Obs: o ponto antes do ítem é o tipo padrão da "ul", também podemos definir outros dois, o Circle(um círculo branco) e Square(um quadrado preto) utilizando código abaixo:
+<html>
+<ul type="clircle"></ul>
+<ul type="square"></ul>
+
+
+
+LISTA ORDENADA
+
+ol = ordered list.( acrescenta numeração, letras ou algarismo romano para enumerar os itens.)
+Ex:
+<html>
+<ol>
+    <li>Cliper</li>
+    <li>visual Basic</li>
+    <li>Fortran</li>
+    <li>Delphi</li>
+</ol>
+<web>
+1. Cliper
+2. visual Basic
+3. Fortran
+4. Delphi
+Obs: As listas ordenadas atribuem por padrão, numeração aos ítens, mas também podemos definir os tipos: a-A(alfabético), i-I(Romano) utilizando o seguinte código:
+<html>
+<ol type="a">
+    <li>Cliper</li>
+    <li>visual Basic</li>
+    <li>Fortran</li>
+    <li>Delphi</li>
+</ol>
+
+<web>
+a. Cliper
+b. visual Basic
+c. Fortran
+d. Delphi
+
+Além do "type", podemos atribuir o "start" que faz a lista começar a partir de um número definido.
+Ex:
+<html>
+<ol>
+    <li>Antigas</li>
+    <ol type="a">
+        <li>Cliper</li>
+        <li>visual Basic</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a" start="5"
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Ktlin</li>
+</ol>
+
+<web>
+1. Antigas
+    a. Cliper
+    b. visual Basic
+    c. Fortran
+    d. Delphi
+2. Novas
+    e. PHP
+    f. Python
+    g. JavaScript
+    h. Ktlin
+Os ítens da "ol novas" começam a partir da letra "E" que é a quinta letra do alfabeto. O start é EXCLUSIVAMENTE numérico ainda que o "type" seja alfabético ou romano.
+
+LISATAS MISTAS.
+
+É possível utlizar "ul" e "ol" em lista dentro de lista.
+<html>
+<ol>
+        <li>NES</li>
+        <ul>
+            <li>Mário Bros</li>
+            <li>Nija Gaiden</li>
+        </ul>
+        <li>SuperNintendo</li>
+        <ul>
+            <li>Mário Bros</li>
+            <li>Top Gear</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Resident Evil</li>
+            <ul type="circle">
+                <li>RE-2</li>
+                <li>RE-3</li>
+                <li>RE-Code Verônica</li>
+                <li>RE-4</li>
+                <li>RE-5</li>
+            </ul>
+            <li>Ace Combat</li>
+            <ul type="circle">
+                <li>AC-2</li>
+                <li>AC-3</li>
+            </ul>
+        </ul>
+    </ol>
+<web>
+
+1. SuperNintendo
+    . Mário Bros
+    . Top Gear
+2. PlayStation
+    . Resident Evil
+        ° RE-2
+        ° RE-3
+        ° RE-Code Verônica
+        ° RE-4
+        ° RE-5
+    . Ace Combat
+        ° AC-2
+        ° AC-3
+Consoles em "ol", jogos em "ul" e versões dos jogos em "ul" °(circle).
+
+LISTA DE definição.
+
+serve para inserir um termo, e em seguida, sua definição. Para isso utilizamos as tags: "dl"(descripton list)"dd"(description definition)
+Ex:
+<html>
+<dl>
+    <dt>HTML</dt>   <!--Termo-->
+    <dd>Linguagem de programação para criação do conteúdo de um site</dd>    <!--Descrição-->
+    
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para criação do design do site</dd>
+    
+    <dt>JavaScript</dt>
+    <dd>Linguagem de progamação para a criação de interatividade de um site</dd>
+</dl>
+
+<web>
+HTML
+    Linguagem de programação para criação do conteúdo de um site.
+CSS
+    Linguagem de marcação para criação do design do cite.
+JavaScript
+    Linguagem de progamação para a criação de interatividade de um site.
