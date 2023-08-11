@@ -1,0 +1,71 @@
+Hierarquia de tabelas simples:
+
+ table(tabela)
+    table row(linh de tabela)
+        table header(cabeçalho de tabela)
+        table data(dado de tabela)
+
+Obs: O W3C coloca como opcional o fechamento das tags </td> e  <tr>
+
+se a hierarquia não for obedecida, os dados vaõ aparecer antes ou depois da tabela
+
+Código:
+
+<title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 5px solid red;
+            
+        }
+        tr.linha{
+            background-color: rgba(128, 128, 128, 0.699);
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;  
+        }
+        td.dado{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr><!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="linha">
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+    </table>
+</body>
+
+border-colapse: colapse; (remove os GAPs das linha e colunas)
