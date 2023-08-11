@@ -72,3 +72,14 @@ border-colapse: colapse; (remove os GAPs das linha e colunas)
 
 Alinhamento de dados da célula:
 vertical-align: top; /*Alinhamento vertical*/
+
+
+Hierarquia de tabelas grande:
+
+    table
+        thead
+            tr,td,th
+        tbody
+            tr, td,th
+        tfoot
+            tr,td,th
