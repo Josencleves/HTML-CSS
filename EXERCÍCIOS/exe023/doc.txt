@@ -69,3 +69,6 @@ Código:
 </body>
 
 border-colapse: colapse; (remove os GAPs das linha e colunas)
+
+Alinhamento de dados da célula:
+vertical-align: top; /*Alinhamento vertical*/
