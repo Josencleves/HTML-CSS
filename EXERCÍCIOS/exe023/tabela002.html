@@ -11,15 +11,30 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot {
             background-color: rgb(128, 128, 128);
             color: aliceblue;
         }
+        thead > tr> th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(128, 128, 128);
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
+        }/*odd(impar) even(par).Não afetadno as linha de cabeçalho e do roda pé */
         .num{
             text-align: right;
         }
@@ -36,10 +51,11 @@
         tfoot
             tr,td,th-->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px; ">População</th> 
             </tr>
         </thead>
         <tbody>
@@ -87,13 +103,46 @@
                 <td>Goiás</td>
                 <td class="num">6.003.360</td>
              </tr>
+             <tr>
+                <td>Paraiba</td>
+                <td class="num">3.766.528</td>
+             </tr>
+             <tr>
+                <td>Pará</td>
+                <td class="num">7.581.051</td>
+             </tr>
+             <tr>
+                <td>Acre</td>
+                <td class="num">733.559</td>
+             </tr>
+             <tr>
+                <td>Goiás</td>
+                <td class="num">6.003.360</td>
+             </tr>
+             <tr>
+                <td>Paraiba</td>
+                <td class="num">3.766.528</td>
+             </tr>
+             <tr>
+                <td>Pará</td>
+                <td class="num">7.581.051</td>
+             </tr>
+             <tr>
+                <td>Acre</td>
+                <td class="num">733.559</td>
+             </tr>
+             <tr>
+                <td>Goiás</td>
+                <td class="num">6.003.360</td>
+             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel recusandae, quibusdam quidem non facilis possimus qui dolorem neque ipsa deserunt est, perferendis pariatur, corporis soluta? Voluptatum maiores recusandae facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi molestias adipisci dolorem beatae aut obcaecati quisquam, voluptatem officia modi nam quas, hic ipsum cum esse voluptas, dicta nihil nostrum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint facilis officiis, eveniet, iste, eum asperiores omnis deserunt beatae quas debitis temporibus magnam unde numquam illum necessitatibus? Minus nesciunt dolore fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat nemo consequuntur repellat autem blanditiis ipsa porro dolores rerum perferendis adipisci rem ullam deleniti architecto esse sed quia ipsam, fugit atque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error culpa ipsam fugiat distinctio sint commodi quae voluptatum, molestiae officiis odit veritatis, perspiciatis eos repudiandae voluptatibus itaque explicabo a, corporis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores aut voluptatibus non aliquam sequi accusamus eaque animi dolorem facilis eius quaerat delectus, autem deleniti doloribus iure fuga quibusdam impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, cumque enim at corrupti corporis mollitia laborum veritatis sapiente, recusandae quis ea saepe sequi minus assumenda omnis quia, alias veniam nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel recusandae, quibusdam quidem non facilis possimus qui dolorem neque ipsa deserunt est, perferendis pariatur, corporis soluta? Voluptatum maiores recusandae facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi molestias adipisci dolorem beatae aut obcaecati quisquam, voluptatem officia modi nam quas, hic ipsum cum esse voluptas, dicta nihil nostrum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint facilis officiis, eveniet, iste, eum asperiores omnis deserunt beatae quas debitis temporibus magnam unde numquam illum necessitatibus? Minus nesciunt dolore fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat nemo consequuntur repellat autem blanditiis ipsa porro dolores rerum perferendis adipisci rem ullam deleniti architecto esse sed quia ipsam, fugit atque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error culpa ipsam fugiat distinctio sint commodi quae voluptatum, molestiae officiis odit veritatis, perspiciatis eos repudiandae voluptatibus itaque explicabo a, corporis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores aut voluptatibus non aliquam sequi accusamus eaque animi dolorem facilis eius quaerat delectus, autem deleniti doloribus iure fuga quibusdam impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, cumque enim at corrupti corporis mollitia laborum veritatis sapiente, recusandae quis ea saepe sequi minus assumenda omnis quia, alias veniam nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel recusandae, quibusdam quidem non facilis possimus qui dolorem neque ipsa deserunt est, perferendis pariatur, corporis soluta? Voluptatum maiores recusandae facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi molestias adipisci dolorem beatae aut obcaecati quisquam, voluptatem officia modi nam quas, hic ipsum cum esse voluptas, dicta nihil nostrum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint facilis officiis, eveniet, iste, eum asperiores omnis deserunt beatae quas debitis temporibus magnam unde numquam illum necessitatibus? Minus nesciunt dolore fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat nemo consequuntur repellat autem blanditiis ipsa porro dolores rerum perferendis adipisci rem ullam deleniti architecto esse sed quia ipsam, fugit atque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error culpa ipsam fugiat distinctio sint commodi quae voluptatum, molestiae officiis odit veritatis, perspiciatis eos repudiandae voluptatibus itaque explicabo a, corporis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores aut voluptatibus non aliquam sequi accusamus eaque animi dolorem facilis eius quaerat delectus, autem deleniti doloribus iure fuga quibusdam impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, cumque enim at corrupti corporis mollitia laborum veritatis sapiente, recusandae quis ea saepe sequi minus assumenda omnis quia, alias veniam nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vel recusandae, quibusdam quidem non facilis possimus qui dolorem neque ipsa deserunt est, perferendis pariatur, corporis soluta? Voluptatum maiores recusandae facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi molestias adipisci dolorem beatae aut obcaecati quisquam, voluptatem officia modi nam quas, hic ipsum cum esse voluptas, dicta nihil nostrum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint facilis officiis, eveniet, iste, eum asperiores omnis deserunt beatae quas debitis temporibus magnam unde numquam illum necessitatibus? Minus nesciunt dolore fugiat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat nemo consequuntur repellat autem blanditiis ipsa porro dolores rerum perferendis adipisci rem ullam deleniti architecto esse sed quia ipsam, fugit atque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error culpa ipsam fugiat distinctio sint commodi quae voluptatum, molestiae officiis odit veritatis, perspiciatis eos repudiandae voluptatibus itaque explicabo a, corporis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores aut voluptatibus non aliquam sequi accusamus eaque animi dolorem facilis eius quaerat delectus, autem deleniti doloribus iure fuga quibusdam impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, cumque enim at corrupti corporis mollitia laborum veritatis sapiente, recusandae quis ea saepe sequi minus assumenda omnis quia, alias veniam nobis!</p>
 </body>
 </html>
