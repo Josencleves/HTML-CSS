@@ -1502,3 +1502,20 @@ Prática:
 
 
 
+
+ESCOPOS DE GRUPO:
+
+
+https://www.youtube.com/watch?v=muKp1-jcs3Q&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&index=36
+
+
+Se o "th" ocupa apenas uma linha usaremos: scope: "row"
+Se o "th" ocupa apenas uma coluna usaremos: scope: "col"
+Se o "th" ocupa mais de uma linha usaremos: scope: "rowgrup"
+Se o "th" ocupa mais de uma coluna usaremos: scope: "colgrop"
+
+
+
+============================================================
+
+
