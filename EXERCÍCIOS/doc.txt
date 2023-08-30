@@ -1508,14 +1508,120 @@ ESCOPOS DE GRUPO:
 
 https://www.youtube.com/watch?v=muKp1-jcs3Q&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&index=36
 
+Em relação ao th.
 
 Se o "th" ocupa apenas uma linha usaremos: scope: "row"
 Se o "th" ocupa apenas uma coluna usaremos: scope: "col"
-Se o "th" ocupa mais de uma linha usaremos: scope: "rowgrup"
-Se o "th" ocupa mais de uma coluna usaremos: scope: "colgrop"
+Se o "th" ocupa mais de uma linha usaremos: scope: "rowgroup"
+Se o "th" ocupa mais de uma coluna usaremos: scope: "colgroup"
 
+Ex:
+<tr>
+    <th scope: "colgroup">Média</th>
+</tr>
+
+<tr>
+    <th>Nota 1</th>
+    <th>Nota 2</th>
+</tr>
+O "colgroup" indica que "Média" ocupa um grupo de duas colunas.
 
 
 ============================================================
 
 
+
+AGRUPANDO COLUNAS COM "COLGROUP'
+
+https://www.youtube.com/watch?v=1Ro7rjINNb0&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&index=38
+
+
+
+Para inserir estilo em uma linha basta selecioar a "tr" que irá receber o estilo. Porem quando queremos fazer com colunas sem utilizar o recurso de classes, utilizaremos a função "colgroup".
+
+Ex:
+        .csexo{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissão">
+        </colgroup>
+Neste caso toda a coluna "Sexo" terá o background "yellow"
+
+
+
+
+
+
+Ex-02:
+
+        .cnome{
+            background-color: yellow;
+        }
+        .cgrupo{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprofissão">
+        </colgroup>
+Neste exemplo toda a coluna "nome" ficará em amarelo e as colunas "sexo" e "idade" rebem a cor vermelha. Repare que a coluna "cgrupo" recebe o valor das colunas "sexo" e "idade" devido o uso da função 'span="2" ' e por isso só precisamos de 3 "<col>" pois a c grupo está valendo por 2.
+
+
+
+Ex-03:
+
+        .yellow{
+            background-color: yellow;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="yellow">
+            <col class="red">
+            <col class="yellow">
+            <col class="red">
+        </colgroup>
+
+Neste exemplo criamos no "style" um tipo de lista de cores, que foram atribuidas às colunas ficando da seguinte forma: nome = yellow
+sexo = red
+idade = yellow
+profissão = red
+
+
+RESUMO:
+para selecionar uma linha utilizamos uma "class" no "tr".
+para selecionar uma coluna utilizamos  "colcroup".
+
+
+
+
+
+=============================================================
+
+
+
+TABELAS RESPONSIVAS
+
+
+https://www.youtube.com/watch?v=-0CgGstWMcA&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&index=39
