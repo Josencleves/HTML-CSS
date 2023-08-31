@@ -1625,3 +1625,24 @@ TABELAS RESPONSIVAS
 
 
 https://www.youtube.com/watch?v=-0CgGstWMcA&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ&index=39
+
+
+1-Seleciona a tabela inteira.
+
+2-envelopa com uma div de id= "container"
+
+no style:
+div#container{
+    overflow-x: auto;
+}
+
+a tabela vai seguir a proporção da página, e vai criar um scroll na tabela, o que torna possível movimentar a tabela sem mover o resto do conteúdo.
+
+
+
+=============================================================
+
+
+O IFRAME AINDA É USADO?
+
+https://www.youtube.com/watch?v=GWULnkTnapM&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=2

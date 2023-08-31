@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            position: relative;
+            
+        }
+        thead {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            color: aliceblue;
+        }
+        th{
+            color: aliceblue;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .gen{
+            background-color: gray;
+            color: aliceblue;
+        }
+        .idade{
+            background-color: rgb(229, 255, 0);
+        }
+        
+        .num{
+            text-align: right;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Treinamento 01</h1>
+    <table>
+        <caption><b>Lango lango</b></caption>
+        <colgroup>
+            <col class="gen">
+            <col class="nome">
+            <col class="idade">
+            <col class="profissão">
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2">Gênero</th>
+                <th rowspan="2">nome</th>
+                <th rowspan="2">idade</th>
+                <th colspan="2">profissão</th>
+                
+            </tr>
+            <tr>
+                <th>Ativo</th>
+                <th>Aposentado</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Masculino</th>
+                <td>João</td>
+                <td>12</td>
+                <td>Matador de passarinho</td>
+                <td>não</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>44</td>
+                <td>Militar</td>
+                <td>não</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>54</td>
+                <td>Morotista</td>
+                <td>Sim</td>
+            </tr>
+
+
+            <tr>
+                <th rowspan="3">Feminino</th>
+                <td>Joana</td>
+                <td>22</td>
+                <td>Jornalista</td>
+                <td>não</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>12</td>
+                <td>Estudante</td>
+                <td>não</td>
+            </tr>
+            <tr>
+                <td>Luciana</td>
+                <td>45</td>
+                <td>Médica</td>
+                <td>não</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="4">total</th>
+            <td class="num">6</td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
