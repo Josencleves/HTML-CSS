@@ -1646,3 +1646,10 @@ a tabela vai seguir a proporção da página, e vai criar um scroll na tabela, o
 O IFRAME AINDA É USADO?
 
 https://www.youtube.com/watch?v=GWULnkTnapM&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=2
+
+É um quadro em linha onde podemos inserir coisas como um site. Alguns sites tem proteção contra divulgação em iframe, como forma de segurança.
+
+
+
+=============================================================
+
