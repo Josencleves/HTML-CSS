@@ -1653,3 +1653,34 @@ https://www.youtube.com/watch?v=GWULnkTnapM&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh
 
 =============================================================
 
+
+CONFIGURANDO IFRAMES:
+
+https://www.youtube.com/watch?v=eAxGt3ObQ24&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=3
+
+
+Caso o navegador não seja compatível com o "iframe"; ao inves de mostrar a mensagem: "Seu navegador não é compatível", poderemos mostrar o link da pagina inserindo um "<a>". 
+
+Ex:
+
+<p>Acessando o site do  
+    <iframe src="https://www.cursoemvideo.com" frameborder="0">
+        <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+    </iframe>    
+    para aprender a programar.
+</p>
+
+
+O "<a>" será executado apenas se o iframe não for.
+
+Por padrão o tamanho do iframe é de 300x150px. Essa proporção pode ser modificada da seguinte forma:
+
+Ex:
+<iframe src="https://gustavoguanabara.github.io" frameborder="0" height="400px">
+
+Podemos inserir um "heigth" e ou "width" ao final dos dados.
+Obs: As configurações inseridas no "style", sempre irão ter prioridade sobre as configurações na linha de comando.
+
+
+podemos também inserir o "scrowlling='no' "
+Este comando faz a barra de rolagem desaparecer caso o conteúdo não seja grande o sufiiente.
