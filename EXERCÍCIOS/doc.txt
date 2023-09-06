@@ -1673,7 +1673,7 @@ Ex:
 
 O "<a>" será executado apenas se o iframe não for.
 
-Por padrão o tamanho do iframe é de 300x150px. Essa proporção pode ser modificada da seguinte forma:
+Por padrão o tamanho do iframe é de 300px 150px. Essa proporção pode ser modificada da seguinte forma:
 
 Ex:
 <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="400px">
@@ -1684,3 +1684,14 @@ Obs: As configurações inseridas no "style", sempre irão ter prioridade sobre 
 
 podemos também inserir o "scrowlling='no' "
 Este comando faz a barra de rolagem desaparecer caso o conteúdo não seja grande o sufiiente.
+
+
+=============================================================
+
+
+
+CONTEÚDO LOCAL NO IFRAME:
+
+https://www.youtube.com/watch?v=G8H5jhabq8k&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=4
+
+Ao invés de inserir um site, podemos inserir uma pagina local "html" por exemplo.
