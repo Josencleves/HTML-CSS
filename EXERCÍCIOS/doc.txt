@@ -1695,3 +1695,43 @@ CONTEÚDO LOCAL NO IFRAME:
 https://www.youtube.com/watch?v=G8H5jhabq8k&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=4
 
 Ao invés de inserir um site, podemos inserir uma pagina local "html" por exemplo.
+
+
+
+=============================================================
+
+
+NAVEGAÇÃO NO IFRAME:
+
+https://www.youtube.com/watch?v=y6CKgnBYs5E&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=5
+
+
+O exemplo a seguir permitirá navagar entre várias páginas no mesmo "iframe"
+
+Ex:
+
+    <ul>
+        <li><a href="./paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        
+        <li><a href="paginas-extras/pagina02.html" target="frame">Segunda página</a></li>
+        
+        <li><a href="./paginas-extras/pagina03.html" target="frame">Terceira página</a></li>
+    </ul>
+    
+    <iframe id="tela" name="frame" src="">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+Obs: É preciso atribuir "name" ao "iframe", pois se utilizarmos o "id", a pasta será aberta fora do "iframe". Depois disso basta atribuir o "target" com o "name" do iframe.
+
+
+
+=============================================================
+
+
+
+
+CONTEÚDO NO IFRAME POR CÓDIGO:
+
+https://www.youtube.com/watch?v=8Jb75kIqUQs&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=6
+
