@@ -1735,3 +1735,11 @@ CONTEÚDO NO IFRAME POR CÓDIGO:
 
 https://www.youtube.com/watch?v=8Jb75kIqUQs&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=6
 
+para inserir um conteúdo na iframe por padrão, basta utilizar o "src".
+
+
+=============================================================
+
+
+
+
