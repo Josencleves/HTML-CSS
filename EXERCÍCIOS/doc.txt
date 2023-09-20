@@ -1738,8 +1738,65 @@ https://www.youtube.com/watch?v=8Jb75kIqUQs&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh
 para inserir um conteúdo na iframe por padrão, basta utilizar o "src".
 
 
+
 =============================================================
 
 
 
+INCONVENIENTES DO IFRAME:
 
+https://www.youtube.com/watch?v=_bYRQTnFXF8&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=7
+
+- sites quebrados
+- dificuldade para deficientes visuais.
+- risco de segurança. Pois o outro site pode ter vírus.
+
+
+
+=============================================================
+
+
+
+Tornando iframes mais seguros:
+
+https://www.youtube.com/watch?v=mRhjlDN4Ezo&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=8
+
+quando utilizo a função "sandbox='sandbox'." Eu crio uma proteção a ataques pois não estou capturando nenhum tipo de informação.
+
+Ex:
+<iframe src="./paginas-extras/pagina004.html" sandbox="sandbox">
+
+Outra forma de aumentar a segurança é utilizando a função "referrerpolicy='no-referrer'" . Faz com que o onteúdo do "iframe" não colete nenhum tipo de dados do usuário.
+
+Ex:
+<iframe src="./paginas-extras/pagina004.html" sandbox="sandbox" referrerpolicy="no-referrer">
+    seu navegador não é compatível.
+</iframe>
+
+
+caso queira que um site ou formulário específico deixar executar, basta ligar algumas configurações do "sandbox".
+Caso a pagina esteja no mesmo servidor, podemos inserir: sanbox="allow-same-origin" para permitir conteúdos de mesma origem.
+Ex:
+<iframe src="./paginas-extras/pagina004.html" sandbox="allow-same-origin" referrerpolicy="no-referrer">
+    seu navegador não é compatível.
+</iframe>
+
+também podemos permitir formulários ou scripts inserindo:
+espaço + "allow-forms" espaço +"allow-scrips"
+
+Ex:
+<iframe src="./paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+    seu navegador não é compatível.
+</iframe>
+
+dessa forma estamos permitindo coisas da mesma página, mesmo fomulário e mesmo script
+
+
+
+
+=============================================================
+
+Dicas para iframes melhores
+
+
+https://www.youtube.com/watch?v=dzhJsc1YszU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=9
