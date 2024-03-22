@@ -1847,3 +1847,10 @@ https://youtube.com/watch?v=7P22zubU6i8&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&
 
 -step="0.1": define de quanto em quanto os numeros podem ser acrecidos. do contrário não permitiria a sigitação de números decimais.
 Ex: 5.2
+
+=================================================
+
+Compatibilidade com navegadores
+
+https://www.youtube.com/watch?v=jX7v3lFdnvg&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=22
+
