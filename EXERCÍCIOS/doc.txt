@@ -1800,3 +1800,41 @@ Dicas para iframes melhores
 
 
 https://www.youtube.com/watch?v=dzhJsc1YszU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=9
+
+================================================
+Formulário
+https://www.youtube.com/watch?v=Wa1Ji2t2gmc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=18
+
+================================================
+usar label
+
+https://www.youtube.com/watch?v=MqdSffM1HZc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=18
+
+================================================
+
+metodos de envio de formulário
+
+https://www.youtube.com/watch?v=rcaXavXsWGA&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=19
+
+usa (method: "get") quando boce quer que a url seja compartilhavel(serve apenas para enviar 3000 bites +- 3000 letras)
+não usa get caso use senhas ou fotos/arquivos 
+
+
+===============================================
+Criando caixas de texto e de senha
+
+https://www.youtube.com/watch?v=SinNyasc-zU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=20
+
+-Função "required": torna o brigatório o preenchimento, mostra a mensagem: Preencha este campo.
+
+- "minlenght/max": Mostra o tamanho mínimo e maximo em relação ao número de caracteres.
+
+- "size": Limita o tamanho da caixa do input em relação ao número de caracteres. Se o "maxlenght" acieta 8 e o "size" aceita apenas 5, ele vai criar uma barra de rolagem lateral
+OBS.: Não está funcionando corretamente com senhas
+
+- "autocomplete": no "form" apresenta as opções: "on/off". Quando usado no input, ele possibilita atribuir muitas funcionalidades.Por exemplo o: "new-password" que vai sugerir criar uma nova senha utilizando google senhas.
+================================================
+
+Elementos number, month, date e time em formulários HTML
+
+https://youtube.com/watch?v=7P22zubU6i8&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=21
