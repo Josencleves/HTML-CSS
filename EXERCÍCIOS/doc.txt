@@ -1854,3 +1854,34 @@ Compatibilidade com navegadores
 
 https://www.youtube.com/watch?v=jX7v3lFdnvg&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=22
 
+=================================================
+
+Formulários com telefone e e-mail
+
+https://www.youtube.com/watch?v=SRMEHklQC4M&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=23
+
+
+RegEx: expressões regulares
+pattern="^\d{4}-\d{4}$" a função serve para configurar o formato do número telefônico. no exemplo:
+    4 dígitos compreendidos entre 0 e 9, um traço separando, mais 4 dígitos compreendios entre 0 e 9.
+
+caso seja um número de celular?
+pattern="^\d{4,5}-\d{4}$".
+
+de 4 a 5 dígitos compreendidos entre 0 e 9, um traço separando, mais 4 dígitos compreendios entre 0 e 9.
+
+para botar o DDD:
+pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+
+cria parênteses com 2 dígitos dentro, seguido de 4 a 5 dígitos compreendidos entre 0 e 9, um traço separando, mais 4 dígitos compreendios entre 0 e 9.
+
+fieldset : faze um agrupamento de elementos com uma linha de contorno
+
+legend: torna possivel nomear o agrupamento
+OBS.: é possível estilizar tudo com css
+
+=================================================
+
+Checkbox e Radio button em HTML
+
+https://www.youtube.com/watch?v=iGDHFa4znHE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=24
