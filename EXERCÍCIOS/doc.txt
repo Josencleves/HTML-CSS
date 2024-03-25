@@ -1843,9 +1843,9 @@ https://youtube.com/watch?v=7P22zubU6i8&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&
 
 -input type="number": cria uma caixa onde somente podem ser digitados números.
 
--min="0" max="10": não posuem o lenght mas conceito é exatamente o mesmo.
+-min="0" max="10": não possuem o lenght mas o conceito é exatamente o mesmo.
 
--step="0.1": define de quanto em quanto os numeros podem ser acrecidos. do contrário não permitiria a sigitação de números decimais.
+-step="0.1": define de quanto em quanto os numeros podem ser alterados. do contrário não permitiria a digitação de números decimais.
 Ex: 5.2
 
 =================================================
@@ -1885,3 +1885,15 @@ OBS.: é possível estilizar tudo com css
 Checkbox e Radio button em HTML
 
 https://www.youtube.com/watch?v=iGDHFa4znHE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=24
+
+radio: inserir os mesmo "name" fará desmarcar uma oção quando outra for marcada.
+
+OBS: isso não serve para checkbox
+
+caso queira iniciar com uma opção específica marcada, basta inserir no "input" desejado a função "checked". Funciona tanto no "radio" quanto no "checkbox"
+
+=================================================
+
+Elementos color, range e file em HTML
+
+https://www.youtube.com/watch?v=acOURIAlB1Q&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=25
