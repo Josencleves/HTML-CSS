@@ -2013,3 +2013,8 @@ EX-03:
             iidade.innerHTML = Number(atual) - Number(iano.value)
         }
     </script>
+
+=================================================
+Criando um site com versão para impressora
+
+https://www.youtube.com/watch?v=DMYlN21ajtU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=29
