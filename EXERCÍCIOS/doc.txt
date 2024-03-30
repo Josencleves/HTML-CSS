@@ -1897,3 +1897,119 @@ caso queira iniciar com uma opção específica marcada, basta inserir no "input
 Elementos color, range e file em HTML
 
 https://www.youtube.com/watch?v=acOURIAlB1Q&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=25
+
+input type: color. fixa uma caixa de cor que pode ser alterada. Por padrão vem a cor preta, mas podemos alterar acrescentando "value='#00ff00' ". neste caso a cor verde
+
+range por padrão vai de 0% à 100%.
+- adicionando as funções "min" e "max" podemos setar os salto.
+Ex: min="1" max="5". Ele dará 5 saltos sendo a posição zero o 1.
+
+- por padrão, o nível começa exatamente no meio da medida, mas também podemos alterar isso acrescentando "value='#' ".
+Ex: min="1" max="5" value="2". ele irá iniciar no nível 2.
+
+-File: possibilita enviar arquivos. Usar o method="post" por arquivos extrapolarem o limite de 3000byte
+
+=================================================
+
+Select, datalist e textarea
+
+https://www.youtube.com/watch?v=PFGmSEj2wIo&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=26
+
+-Select gera uma lista de colapsável. como por exemplo: Estados Brasileiros.
+os itens dessa lista devem ser inseridos em "option" cada um. Podemos também gerar um grupo de listas usando o "optgroup".
+ex:
+ <label for="iest">Estado</label>
+<select name="estado" id="iest">
+    <optgroup label="Região Suldeste">
+        <option value="SP">São Paulo</option>
+        <option value="RJ" selected>Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+    </optgroup>
+
+    <optgroup label="Região Nordeste">
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="PE">Pernambuco</option>
+        <option value="MA">Maranhão</option>
+    </optgroup>
+</select> 
+- podemos definir uma opção por padrão, inserindo "selected":
+EX:
+<option value="RJ" selected>Rio de Janeiro</option>
+
+-Datalist faz a mesma coisa porém permite acrescentar item não listado.
+
+<label for="iprof">Profissão</label>
+<input type="text" name="prof" id="iprof" list="listprof">
+<datalist id="listprof">
+    <option value="ADM">Administrador</option>
+    <option value="CONT">Contador</option>
+    <option value="DEV">Desenvolvedor</option>
+    <option value="PROF">Professor</option>
+</datalist>
+
+-textarea cria uma caixa de mensagem com tamanho ilimitado.
+OBS.: usar method="post" devido ao tamanho do dado.
+EX.:
+<label for="imsg">Mensagem: </label><br>
+<textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+=================================================
+
+Elemento output em formulários
+
+https://www.youtube.com/watch?v=8b6K4UQDm7w&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=27
+
+output serve para mostrar dados na tela mas não para enviar. Ele cria um campo para exibir retorno do JavaScript.
+EX:
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+    </form>
+
+
+
+Ex-02:
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="0"
+            oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">0</output>
+        </p>
+
+    </form>
+
+
+EX-03:
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcIdade()" >
+        </p>
+
+        
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
