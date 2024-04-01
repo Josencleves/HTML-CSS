@@ -2018,3 +2018,15 @@ EX-03:
 Criando um site com versão para impressora
 
 https://www.youtube.com/watch?v=DMYlN21ajtU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=29
+
+
+===============================================
+Múltiplas Media Features com CSS
+
+https://www.youtube.com/watch?v=VGD5Uy1C8Cw&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=30
+
+media query = media tipe + media features
+
+para definir a orientação da tela, podemos inserir media "screen and(orientation: protrait/ landscape)":
+EX:
+<link rel="stylesheet" href="estilos/retrato.css" media="screen and(orientation: portrait)">
