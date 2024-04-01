@@ -2030,3 +2030,11 @@ media query = media tipe + media features
 para definir a orientação da tela, podemos inserir media "screen and(orientation: protrait/ landscape)":
 EX:
 <link rel="stylesheet" href="estilos/retrato.css" media="screen and(orientation: portrait)">
+
+=================================================
+Seguindo a orientação do dispositivo
+Dando continuidade ao projeto anterior.
+
+https://www.youtube.com/watch?v=IRCDwdZLlX4&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=31
+
+as alterações que são comuns a todos , devem ser realizadas no "style" e as que são diferentes devem ser realizadas em cada css específico
