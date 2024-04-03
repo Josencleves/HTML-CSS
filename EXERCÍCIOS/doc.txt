@@ -2038,3 +2038,28 @@ Dando continuidade ao projeto anterior.
 https://www.youtube.com/watch?v=IRCDwdZLlX4&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=31
 
 as alterações que são comuns a todos , devem ser realizadas no "style" e as que são diferentes devem ser realizadas em cada css específico
+
+=================================================
+Reunindo tudo em um único CSS
+
+https://www.youtube.com/watch?v=DkA_OQgjjKg&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=32
+
+Criando apenas uma página css utilizando as funções:
+@media all{
+    todas as configurações de all
+}
+
+@media screen and (orientation: portrait) {
+    todas as configurações de retrato.
+}
+
+@media screen and (orientation: landscape) {
+    todas as configurações de paisagem.
+}
+
+=================================================
+
+Mobile First
+
+https://www.youtube.com/watch?v=q6SZKTHUQiw&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=33
+
