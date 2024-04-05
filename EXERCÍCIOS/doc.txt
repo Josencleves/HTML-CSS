@@ -2063,3 +2063,35 @@ Mobile First
 
 https://www.youtube.com/watch?v=q6SZKTHUQiw&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=33
 
+
+=================================================
+
+Iniciando um site mobile first
+
+https://www.youtube.com/watch?v=wU80w4xbNxQ&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=34
+
+=================================================
+
+Device breakpoint
+
+https://www.youtube.com/watch?v=S8YXMqDsbhA&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=35
+
+*tipical device breackpoints
+pequenas telas: até 600px
+celulares: de 600px até 768px
+tablet:768px até 992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+
+=================================================
+
+Menu responsivo com HTML5 e CSS3
+
+https://www.youtube.com/watch?v=Zp3fnf99kTg&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=36
+
+Configurando o layout do projeto
+
+https://www.youtube.com/watch?v=67W4NdxW1kw&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=37
+
+Menu humburg
+https://www.youtube.com/watch?v=Dd6Z3gkud18&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=38
