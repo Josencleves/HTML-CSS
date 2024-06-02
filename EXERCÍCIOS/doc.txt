@@ -2100,3 +2100,19 @@ https://www.youtube.com/watch?v=Dd6Z3gkud18&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh
 
 Media Queries para outros dispositivos
 https://www.youtube.com/watch?v=T1rfhkmcH00&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=39
+
+================================================
+
+Tela de login responsiva só com HTML e CSS
+https://www.youtube.com/watch?v=4NB0_DPpjak&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=40
+
+
+=================================================
+
+Primeiros passos com Flexbox CSS 
+
+https://www.youtube.com/watch?v=YeGn9nGies0&t=13s
+
+no pai : display flex.
+no filho: flex auto 
+Isso fará o conteudo se adaptar ao tamanho do pai.
