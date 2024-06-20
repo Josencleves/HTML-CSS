@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            /*flex-direction: row;
+            flex-wrap: nowrap;
+*/
+            flex-flow: row wrap-reverse;
+
+            /*
+            flex-flow: row nowrap;
+            é uma forma resumida de escrever:
+                flex-direction: row;
+                flex-wrap: nowrap;
+            */
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;/*Elemento utilizado no filho, elimina espaços vazios no pai*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo A</div>
+        <div class="item">Exemplo B</div>
+        <div class="item">Exemplo C</div>
+        <div class="item">Exemplo D</div>
+        <div class="item">Exemplo E</div>
+        <div class="item">Exemplo  F</div>
+        <div class="item">Exemplo  G</div>
+    </div>
+</body>
+</html>

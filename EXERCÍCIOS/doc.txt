@@ -2116,3 +2116,55 @@ https://www.youtube.com/watch?v=YeGn9nGies0&t=13s
 no pai : display flex.
 no filho: flex auto 
 Isso fará o conteudo se adaptar ao tamanho do pai.
+
+=================================================
+
+Direções e Eixos Flexbox CSS
+https://www.youtube.com/watch?v=qtGI16QcV1U&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&index=3
+
+flex direction: row; = deitado da esquerda para direita.
+OBS: row-reverse; = da direita para esquerda
+flex direction: column; = de pé  de cima para baixo.
+OBS: column-reverse; = de baixo para cima
+
+Eixos:
+flex-direction: row; --> eixo principal horizontal--> main-start = a esquerda. main-and = a direita. cross-axis de cima para baixo
+OBS: no row-reverse muda o main-axis da direita para a esquerda.
+
+flex-diretcion:column; --> eixo principal vertical--> main-start = em cima. main-and = em baixo. cross axis da esquerda para direita
+OBS: no column-reverse muda o main-axis de baixo para cima.
+
+=================================================
+
+Empacotamento e fluxo no Flexbox CSS
+https://www.youtube.com/watch?v=KRk3tjIZeFI&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&index=4
+
+flex wrap = Empacotamento
+por padrão ele vem flex-wrap: nowrap; Se o pai encolhe e espreme os filhos, eles encolhem também
+
+-flex-wrap: wrap; se o pai encolhe e espreme os filhos, ele quebra no sentido do cross-axis
+
+-flex-wrap: wrap-reverse; se o pai encolhe e espreme os filhos, ele quebra no sentido contrário do cross-axis
+
+-flex-flow: row nowrap; é uma forma resumida de escrever:
+        flex-direction: row;
+        flex-wrap: nowrap;
+ao inves de usar duas linhas de código, substitua por: flex-flow 
+
+-flex: auto: elemento utilsado no filho que serve para eliminar espaços vazios no pai.
+Em conjunto com flex-flow: row wrap; ele gera o número de células necessárias para ocupar todo o pai, seguindo o fluxo cross-axis.
+EX:
+div.pai{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+        div.filho {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+
+=================================================
