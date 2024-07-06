@@ -2168,3 +2168,39 @@ div.pai{
         }
 
 =================================================
+
+https://www.youtube.com/watch?v=KKdr1KZeFqk&t=280s
+
+Alinhamento nos eixos Flexbox
+
+justify-content: alinha os elementos em relação ao "main-axis"
+
+justify-content: flex-start = Alinha os elementos em relação ao main start, deixando o espaço livre, caso haja, mais próximo do main-end
+
+justify-content: flex-end = Alinha os elementos em relação ao main-axis, deixando o espaço livre, caso haja, mais próximo do main-start
+
+justify-content: center = Alinha os elementos ao centro em relação ao main-axis, deixando o espaço livre, caso haja, divididos igualmente entre o main-star e o main-end.
+
+ALINHAMENTO DE ESPAÇAMENTO:
+
+justify-content: space-between = Alinha os elementos em relação ao main-axis, colocando o primeiro elemento colado no mains-start e o ultimo colados no main-end, todos os outros vão estar no meio com o espaçamentos entre eles, igual.
+
+justify-content: space-evenly = Alinha os elementos em relação ao main-axis, colocando todos os elementos espaçados igualmente incluindo espaçamentos do mains-start e do main-end.
+
+justify-content: space-around = Alinha os elementos em relação ao main-axis, vai dividir o epaço total do cantainer e dividir igualmente entre todos os elementos e deois vai colocar todos os elementos alinhados ao centro desses espaços.
+
+ALINHAMENTO NO CROSS-axis
+
+align-items: stretch -> stretch vem por padrão no alingn-items e ele estica os elementos no "cross-axis" para ocupar completamente o container
+
+align-items: flex-start -> Faz grudar no início do "cross-axis"
+
+align-items: flex-end -> Faz grudar no final do "cross-axis"
+
+align-items: center -> Vai alinha exatamente ao centro em relação ao "cross-axis".
+
+=================================================
+
+https://www.youtube.com/watch?v=gfimpySRhUI
+
+Centralização absoluta com Flexbox
