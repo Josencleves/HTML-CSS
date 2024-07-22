@@ -2204,3 +2204,25 @@ align-items: center -> Vai alinha exatamente ao centro em relação ao "cross-ax
 https://www.youtube.com/watch?v=gfimpySRhUI
 
 Centralização absoluta com Flexbox
+
+=================================================
+
+https://www.youtube.com/watch?v=qMTX98pCwXA&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&index=7
+
+Alinhamento de elementos empacotados no Flexbox 
+Align content = alinha os elementos no exio transversal quando eles estão empacotados e por padrão vem Stretch
+
+align content: stretch (pega a dimenção inteira do cross axis e vai dividr pelo número de linhas ou colunas)
+OBS.: ele deorma os elementos para caberem no content
+
+align content: flex-start (alinha tudo no começo do main exis deixando um gap no final de tudo)
+
+align content: flex-end (alinha tudo no final do main exis deixando um gap no começo de tudo)
+
+align content: center (alinha tudo ao centro do main exis deixando um gap no começo e no final)
+
+align-content: space-between (alinha os elementos no começo e os que sobraram ele alinha no final deixando o espaço no meio)
+
+align-content: spacebe-evenly (põe intervalos simétricos entre o começo, os elementos, e o final no cross axis)
+
+align-content: spacebe-around (divide o cross axis em partes iguais, e põe os elementos centralizados dentro de cad área no eixo no cross axis)
